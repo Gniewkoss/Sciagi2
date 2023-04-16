@@ -1,38 +1,118 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+header {
+  padding: 1px;
   text-align: center;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+
+  background: linear-gradient(
+    90deg,
+    rgb(17, 17, 17) 0%,
+    rgb(158, 122, 74) 50%,
+    rgba(17, 17, 17) 100%
+  );
+}
+.main-section {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+article {
+  padding: 20px;
+  background-color: #f1f1f1;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+footer {
+  background: linear-gradient(
+    90deg,
+    rgb(17, 17, 17) 0%,
+    rgb(158, 122, 74) 50%,
+    rgba(17, 17, 17) 100%
+  );
+  padding: 10px;
+  text-align: center;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+article {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu {
+  color: rgb(255, 255, 255);
+  background-color: rgb(37, 37, 37);
+  height: 70px;
+  width: 100%;
+  display: flex;
+  font-size: 25px;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+  padding-left: 10px;
+}
+.menu a {
+  font-size: 20px;
+  padding: 3px 0px;
+  color: #f1f1f1;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 2px solid rgb(37, 37, 37);
+  margin: 10px;
+  transition: border 1s;
+  font-family: "Nunito", sans-serif;
+}
+.menu a:hover {
+  border-bottom: 2px solid rgb(87, 61, 30);
+}
+
+h1 {
+  font-family: "Nunito", sans-serif;
+  margin: 20px;
+}
+h2 {
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 3px;
+  justify-content: center;
+  display: flex;
+}
+h3 {
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 1px;
+}
+p {
+  font-family: "Nunito", sans-serif;
+  display: inline-block;
+}
+li {
+  margin-bottom: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+img {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.grobowce {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+span {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
